@@ -44,7 +44,7 @@
 				background-color: #000000;
 				color: rgb(255, 255, 255);
 				display: block;
-				padding: 0 116.5px;
+				padding: 0 110px;
 				text-decoration: none;
 				line-height: 40px;
 				border: 3px #fff;
@@ -133,7 +133,7 @@
 					</li>
 				</ul>
 			</li>
-			<li><a href="#">美食地圖</a>
+			<li><a href="#">甜點地圖&製作方法</a>
 				<ul>
 					<li><a href="#">台灣美食地圖</a></li>
 					<li><a href="#">北部美食地圖</a></li>
@@ -169,16 +169,15 @@
 					</li>
 				</ul>
 			</li>
-			</li>
-			<li><a href="#">尋找我們</a>
-			</li>
+			<li><a href="#team">組員名單</a></li>
+		</li>
+			
 		</ul>
 		<style>
 		 ul.drop-down-menu ul {
 				border: 2px #fff double;
 				position: absolute;
 				z-index: 99;
-				left: px;
 				top: 100%;
 			   min-width: 180px;
 			}
@@ -230,6 +229,46 @@
 					vertical-align: baseline;}
 						</style>
 			</article>
+<!-- Feature 1 -->
+<article id="first" class="container box style1 right">
+	<a class="image fit"><img id=macarone src="images/macarone/馬卡龍1.jpg" width=0 height=0 alt="" /></a>
+	<div class="inner">
+		<header>
+			<h2>馬卡龍<br />
+				macarone</h2>
+		</header>
+		<p>又稱蛋奶酥、梳乎厘，是於中世紀誕生的法國著名甜點。 法文的“Souffle”就是吹氣的意思。 它的材料就是鮮奶和蛋白，但採用隔水烘烤，到蛋白膨脹那瞬間。</p>
+	</div>
+	<script language =javascript >//換圖程式
+		var curIndex=0;
+		//每秒钟显示一张，数组共有5张图片放在Photos文件夹下。
+		var timeInterval=3000;
+		var aaa=new Array();
+		aaa[0]="images/macarone/馬卡龍1.jpg";
+		aaa[1]="images/macarone/馬卡龍2.jpg";
+		aaa[2]="images/macarone/馬卡龍3.jpg";
+		setInterval(changeImg,timeInterval);
+		function changeImg()
+		{
+		var obj=document.getElementById("macarone");
+		if (curIndex==aaa.length-1)
+		{
+		curIndex=0;
+		}
+		else
+		{
+		curIndex+=1;
+		}
+		obj.src=aaa[curIndex];
+		}
+		</script>
+		<style>
+			.image.fit {
+						display: block;
+						width: 100%;
+						}
+			</style>
+</article>
 
 		<!-- Feature 2 -->
 			<article class="container box style1 left">
@@ -423,21 +462,24 @@
 		<!-- Portfolio -->
 			<article class="container box style2">
 				<header>
-					<h2>甜點地圖</h2>
+					<h2>甜點地圖&製作方法</h2>
 					<p>捷徑幫助你更親近甜點<br />
 					(點一下圖片前往GOOGLE MAP)</p>
 				</header>
+				<br>
+				
 				<div class="inner gallery">
+					<h2 style="background-color:#ffffff">甜點地圖&emsp;製作方法</h2>
 					<div class="row gtr-0">
-						<div class="col-3 col-12-mobile"><a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/01.jpg" alt="" title="Ad infinitum" /></a></div>
-						<div class="col-3 col-12-mobile"><a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" alt="" title="Dressed in Clarity" /></a></div>
+						<div class="col-3 col-12-mobile"><a href="images/muffin/鬆餅map.jpg" width="800" height="533" class="image fit"><img src="images/muffin/鬆餅1-1.jpg" alt="" title="鬆餅(muffin)" /></a></div>
+						<div class="col-3 col-12-mobile"><a href="images/macarone/馬卡龍map.jpg" class="image fit"><img src="images/macarone/馬卡龍1-1.jpg" alt="" title="馬卡龍(macarone)" /></a></div>
 						<div class="col-3 col-12-mobile"><a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" alt="" title="Raven" /></a></div>
 						<div class="col-3 col-12-mobile"><a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" alt="" title="I'll have a cup of Disneyland, please" /></a></div>
 						
 					</div>
 					<div class="row gtr-0">
-						<div class="col-3 col-12-mobile"><a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" alt="" title="Cherish" /></a></div>
-						<div class="col-3 col-12-mobile"><a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/06.jpg" alt="" title="Different." /></a></div>
+						<div class="col-3 col-12-mobile"><a href="images/souffler/舒芙蕾map.jpg" class="image fit"><img src="images/souffler/舒芙蕾-1.jpg" alt="" title="舒芙蕾(Souffle)" /></a></div>
+						<div class="col-3 col-12-mobile"><a href="images/cake/蛋糕3.jfif" class="image fit"><img src="images/cake/蛋糕-1.jpg" alt="" title="Different." /></a></div>
 						<div class="col-3 col-12-mobile"><a href="images/fulls/07.jpg" class="image fit"><img src="images/thumbs/07.jpg" alt="" title="History was made here" /></a></div>
 						<div class="col-3 col-12-mobile"><a href="images/fulls/08.jpg" class="image fit"><img src="images/thumbs/08.jpg" alt="" title="People come and go and walk away" /></a></div>
 						<div class="col-3 col-12-mobile"><a href="images/fulls/08.jpg" class="image fit"><img src="images/thumbs/08.jpg" alt="" title="People come and go and walk away" /></a></div>
@@ -580,43 +622,7 @@
 						</table>
 					</div>
 				</section>
-				<section>
-					<header>
-						<h3>Form</h3>
-					</header>
-					<form method="post" action="#">
-						<div class="row">
-							<div class="col-6 col-12-mobile">
-								<input class="text" type="text" name="name" id="name" value="" placeholder="John Doe" />
-							</div>
-							<div class="col-6 col-12-mobile">
-								<input class="text" type="text" name="email" id="email" value="" placeholder="johndoe@domain.tld" />
-							</div>
-							<div class="col-12">
-								<select name="department" id="department">
-									<option value="">Choose a department</option>
-									<option value="1">Manufacturing</option>
-									<option value="2">Administration</option>
-									<option value="3">Support</option>
-								</select>
-							</div>
-							<div class="col-12">
-								<input class="text" type="text" name="subject" id="subject" value="" placeholder="Enter your subject" />
-							</div>
-							<div class="col-12">
-								<textarea name="message" id="message" placeholder="Enter your message"></textarea>
-							</div>
-							<div class="col-12">
-								<ul class="actions">
-									<li><input type="submit" value="Submit" /></li>
-									<li><input type="reset" class="style3" value="Clear Form" /></li>
-								</ul>
-							</div>
-						</div>
-					</form>
-				</section>
 			</article>
-		-->
 
 		<section id="footer">
 			<ul class="icons">
@@ -627,18 +633,81 @@
 				<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
 				<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 			</ul>
-			<div class="copyright">
-				<ul class="menu">
-					<li>組長:蔡恩潔	-   <br/>
-						組員:蔡森葦	-   程式主設計<br/>
-						組員:楊佳蓁	-   程式副設計/PPT/視覺指導/美編<br/>
-						組員:程芷瑄	-   查資料/影片<br/>
-						組員:陳宥昕	-   查資料/圖片<br/>
-						組員:趙捷萱	-   查資料/歷史<br/>
-				   	</li>
-				</ul>
 			</div>
 		</section>
+		<section id="team">
+			<div class="team">
+				<h12 style="color:orange;" >
+							組長:蔡恩潔	-   <br/>
+						<br/>
+						組員:蔡森葦	-   程式主設計<br/>
+						<br/>
+						組員:楊佳蓁	-   程式副設計/PPT/視覺指導/美編<br/>
+						<br/>
+						組員:程芷瑄	-   查資料/影片<br/>
+						<br/>
+						組員:陳宥昕	-   查資料/圖片<br/>
+						<br/>
+						組員:趙捷萱	-   查資料/歷史<br/>
+				</h12>
+			</div>
+		</section>
+		<body>
+			<a href="#myAnchor" class="go-top">
+				2
+				  Icon, Text, Button, etc...
+				3
+				</a>
+				
+				<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+				$(window).scroll(function(event){
+  var scroll = $(window).scrollTop();
+    if (scroll >= 50) {
+      $(".go-top").addClass("show");
+    }else {
+      $(".go-top").removeClass("show");
+    }
+});
+
+				</script>
+<style>
+.go-top {
+  display:block;
+  width:40px;
+  height:40px;
+  line-height:35px;
+  text-align:center;
+  font-size:30px;
+  position:fixed;
+  bottom:-40px;
+  right:20px;
+  -webkit-transition:all 1s ease;
+  -moz-transition:all 1s ease;
+  -o-transition:all 1s ease;
+  transition:all 1s ease;
+  background-color:#404040;
+  color:#FFFFFF;
+  text-decoration:none;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+}
+.go-top.show {bottom:20px; }
+.go-top:hover {
+  background-color:#5DBA9D;
+  color:#FFFFFF;
+  $(window).scroll(function(event){
+  var scroll = $(window).scrollTop();
+    if (scroll >= 50) {
+      $(".go-top").addClass("show");
+    }else {      $(".go-top").removeClass("show");
+    }
+});
+
+}
+
+</style>
+</body>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -736,7 +805,7 @@
 			}
 
 			body {
-				background-image: url("images/世界地圖.jpg");
+				background-image: url("images/背景.png");
 				background-repeat: repeat, no-repeat;
 				background-size: cover;
 			}
